@@ -1,0 +1,1 @@
+../crisp-game-lib/docs/bundle.d.ts
