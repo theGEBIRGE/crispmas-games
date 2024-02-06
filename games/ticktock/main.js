@@ -1,10 +1,10 @@
-title = "TIKTOK";
+const title = "TICKTOCK";
 
-description = `
-PASS TIME!
+const description = `
+PASS THE TIME!
 `;
 
-characters = [
+const characters = [
   `
 llllll
 ll l l
@@ -28,7 +28,7 @@ let p;
 
 options = {
   isPlayingBgm: true,
-  seed: 6,
+  seed: 7641,
 };
 /** @type {Vector} */
 let origin;

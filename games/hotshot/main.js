@@ -1,13 +1,13 @@
-title = "HOTSHOT";
+const title = "HOTSHOT";
 
-description = `
-HOLD
- to slow down
+const description = `
 RELEASE
  to shoot
+HOLD
+ to slow down
 `;
 
-options = {
+const options = {
   isPlayingBgm: true,
   seed: 1989,
 };
