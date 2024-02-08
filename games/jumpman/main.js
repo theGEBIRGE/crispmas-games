@@ -126,13 +126,13 @@ function update() {
   coinTicks--;
 
   if (obstacleTicks < 1) {
-    obstacleTicks = rndi(80, 180) - difficulty * 5;
+    obstacleTicks = rndi(130, 180) - difficulty * 5;
 
-    const height = rndi(10 + floor(difficulty * 2), 30 + floor(difficulty * 2));
+    const height = rndi(10 + floor(difficulty * 2), 23 + floor(difficulty * 2));
     const width = rndi(5 + floor(difficulty * 2), 10 + floor(difficulty * 2));
 
     const obstacle = {
-      position: vec(100, 95 - height),
+      position: vec(G.WIDTH + 5, 95 - height),
       velocity: vec(G.OBJECT_VELOCITY, 0),
       draw: () => {
         color("light_black");
@@ -147,7 +147,7 @@ function update() {
     coinTicks = 35 - difficulty * 4;
 
     const coin = {
-      position: vec(100, 87),
+      position: vec(G.WIDTH + 5, 87),
       velocity: vec(G.OBJECT_VELOCITY, 0),
       isCollected: false,
       draw: () => {
@@ -186,7 +186,7 @@ function update() {
 
   // Draw the floor.
   color("light_black");
-  line(0, 100, 100, 100, 15);
+  line(0, G.HEIGHT, G.WIDTH, G.HEIGHT, 15);
 
   // Make player update.
   const currentAnimation = addWithCharCode("a", floor(animationTicks / 15) % 2);
